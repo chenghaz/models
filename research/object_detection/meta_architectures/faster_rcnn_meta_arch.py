@@ -1516,7 +1516,7 @@ class FasterRCNNMetaArch(model.DetectionModel):
         representing predicted (final) refined box encodings. If using a shared
         box across classes the shape will instead be
         [total_num_padded_proposals, 1, 4]
-      class_predictions_with_background: a 3-D tensor float with shape
+      class_predictions_with_background: a 2-D tensor float with shape
         [total_num_padded_proposals, num_classes + 1] containing class
         predictions (logits) for each of the proposals.  Note that this tensor
         *includes* background class predictions (at class index 0).
